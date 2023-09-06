@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import styled from "@emotion/styled";
 import Formulario from "./componentes/Formulario";
-import useSelectMonedas from "./hooks/useSelectMonedas";
 import ImagenCripto from "./img/Imagen-criptos.png";
 
 const Contenedor = styled.div`
@@ -40,10 +39,6 @@ const Heading = styled.h1`
 `
 function App() {
   
-  const [ SelectMonedas ] = useSelectMonedas()
-
-  SelectMonedas()
-
   return (
     <Contenedor>
       <Imagen
