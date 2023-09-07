@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import Formulario from './components/Formulario';
 import Resultado from "./components/Resultado";
 import Spinner from "./components/Spinner";
-import ImagenCripto from "./img/Imagen-criptos.png";
+import ImagenCripto from "./img/imagen-criptos.png";
 
 const Contenedor = styled.div`
   max-width: 900px;
