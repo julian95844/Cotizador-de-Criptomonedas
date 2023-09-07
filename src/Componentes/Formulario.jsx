@@ -15,6 +15,7 @@ const InputSubmit = styled.input`
   font-size: 20px;
   border-radius: 5px;
   transition: background-color .3s ease;
+  margin-top: 30px;
   &:hover {
     background-color: #7A7DFE;
     cursor: pointer;
@@ -23,13 +24,15 @@ const InputSubmit = styled.input`
 const Formulario = () => {
 
 
-  const [ SelectMonedas ] = useSelectMonedas("Eligir tu Moneda", monedas)
+  const [ moneda, SelectMonedas ] = useSelectMonedas("Eligir tu Moneda", monedas) // no porque se llame de una manera tiene que llamarse asi, en el arreglo te retorna por indice
 
   return (
     <form>
 
       < SelectMonedas />
 
+      {moneda}
+      
       <InputSubmit 
         type='submit' 
         value="Cotizar"
