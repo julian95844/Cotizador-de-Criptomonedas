@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import styled from "@emotion/styled";
-import Formulario from './componentes/Formulario';
-import Resultado from "./componentes/Resultado";
-import Spinner from "./componentes/Spinner";
+import Formulario from './components/Formulario';
+import Resultado from "./components/Resultado";
+import Spinner from "./components/Spinner";
 import ImagenCripto from "./img/Imagen-criptos.png";
 
 const Contenedor = styled.div`
